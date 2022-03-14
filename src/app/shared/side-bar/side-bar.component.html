@@ -1,0 +1,249 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a [routerLink]="['/']" class="brand-link navbar-success">
+    <img src="../../assets/img/iconograma.png" alt="SIADI" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-bold"> SIADI</span>
+  </a>
+  <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon fa-fw class with font-awesome or any other icon font library -->
+        <li class="nav-item">
+          <a [routerLink]="['/']" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-home"></i>
+            <p>Inicio</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/escritorio']" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-tachometer-alt"></i>
+            <p>Escritorio</p>
+          </a>
+        </li>
+        <li class="nav-header"></li>
+        <li class="nav-item">
+          <a [routerLink]="['/cotizaciones']" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Ver/Crear Cotizaciones</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/pedidos']" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Ver/Crear Pedidos</p>
+          </a>
+        </li>
+        <li class="nav-header"></li>
+        <li class="nav-item">
+          <a [routerLink]="['/diseno-produccion']" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-magic"></i>
+            <p>
+              Diseño y Producción
+            </p>
+          </a>
+        </li>
+        <li class="nav-header"></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-th-large"></i>
+            <p>
+              Almacén
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a [routerLink]="['/administrar-almacen']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Administrar Almacén</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/recepcion-productos']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Recepción de Productos</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-truck"></i>
+            <p>
+              Envíos
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a [routerLink]="['/envios']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Ver Envíos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/configurar-envios']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Configurar</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-header"></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-file-invoice-dollar"></i>
+            <p>
+              Facturación
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a [routerLink]="['/facturas-iconograma']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Facturas Iconograma</p>
+              </a>
+            </li>
+            <li class="nav-item mb-4">
+              <a [routerLink]="['/pagos-iconograma']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Pagos Iconograma</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/facturas-jlr']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Facturas JLR</p>
+              </a>
+            </li>
+            <li class="nav-item mb-4">
+              <a [routerLink]="['/pagos-jlr']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Pagos JLR</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/facturas-experiencia']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Facturas Experiencia</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/pagos-experiencia']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Pagos Experiencia</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/comisiones']" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-chart-line"></i>
+            <p>
+              Comisiones
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-chart-bar"></i> 
+            <p>
+              Reportes
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a [routerLink]="['/reporte-razonsocial']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Reporte Razón Social</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/reporte-cliente']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Reporte por Cliente</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/reporte-producto']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Reporte por Producto</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-header"></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-tools"></i>
+            <p>
+              Administrar
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a [routerLink]="['/proveedores']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Proveedores</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/clientes']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Clientes</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/productos']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Productos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/medidas-claves']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Medidas/Claves Fact.</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/categorias-marcas']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Categorías/Marcas</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/usuarios']" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Usuarios</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-header"></li>
+        <li class="nav-item">
+          <a href="../calendar.html" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-question-circle"></i>
+            <p>
+              Ruta de Pedido
+              <span class="badge badge-info right">JPG</span>
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../calendar.html" class="nav-link">
+            <i class="nav-icon fa-fw fas fa-question-circle"></i>
+            <p>
+              Ruta de Factura
+              <span class="badge badge-info right">JPG</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /.sidebar-menu -->
+</aside>
