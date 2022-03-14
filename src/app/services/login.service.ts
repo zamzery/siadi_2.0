@@ -9,7 +9,9 @@ import { map } from "rxjs";
 })
 export class LoginService {
 	constructor(private http: HttpClient) {}
-
+	/******************************
+	 * FUNCIÓN PARA LOGIN INICIAL *
+	 ******************************/
 	login(data: Ilogin) {
 		return this.http.post(environment.urlLogin, data).pipe(
 			map((resp: any) => {
