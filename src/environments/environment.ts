@@ -3,9 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  urlFirebase: 'https://siadi-b4957-default-rtdb.firebaseio.com/',
-  urlLogin: 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyB_7cNvIDqVd0cD9G_76HMU2ITgRgB6T54'
+	production: false,
+	urlFirebase: "https://siadi-b4957-default-rtdb.firebaseio.com/",
+	urlLogin:
+		"https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyB_7cNvIDqVd0cD9G_76HMU2ITgRgB6T54",
+	urlGetUser:
+		"https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyB_7cNvIDqVd0cD9G_76HMU2ITgRgB6T54",
 };
 
 /*
