@@ -9,11 +9,7 @@ declare var $: any;
 export class SideBarComponent implements OnInit {
 	constructor() {}
 
-	sidebarMenu() {
-		alert("algo hace");
-	}
-
 	ngOnInit() {
-		$('[data-widget="treeview"]').Treeview();
+		$('[data-widget="treeview"]').Treeview("init");
 	}
 }
