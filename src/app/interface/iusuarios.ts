@@ -4,9 +4,7 @@ export interface Iusuarios {
 	email: string;
 	cargo: string;
 	username: string;
-	idToken: string;
-	metodo: string;
 	imagen: string;
-	statusUsuario: string;
-	permisos: string;
+	statusUsuario: boolean;
+	permisos: Array<string>;
 }
