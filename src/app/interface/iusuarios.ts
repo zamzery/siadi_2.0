@@ -3,8 +3,9 @@ export interface Iusuarios {
 	telefono: string;
 	email: string;
 	cargo: string;
-	login: string;
-	clave: string;
+	username: string;
+	idToken: string;
+	metodo: string;
 	imagen: string;
 	statusUsuario: string;
 	permisos: string;
