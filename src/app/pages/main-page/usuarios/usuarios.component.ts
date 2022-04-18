@@ -1,7 +1,10 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Iusuarios } from "src/app/interface/iusuarios";
 import { UsuariosService } from "src/app/services/usuarios.service";
 import { MatTableDataSource } from "@angular/material/table";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatSort, SortDirection } from "@angular/material/sort";
+import { merge, Observable, of as observableOf } from "rxjs";
 
 @Component({
 	selector: "app-usuarios",
@@ -24,6 +27,8 @@ export class UsuariosComponent implements OnInit {
 	dataSource!: MatTableDataSource<Iusuarios>;
 
 	ngOnInit() {
+		var mostrarForm = false;
+		mostrarform(false);
 		this.getData();
 		console.log(this.users);
 	}
@@ -48,4 +53,27 @@ export class UsuariosComponent implements OnInit {
 			console.log("Data-Source: ", this.dataSource);
 		});
 	}
+
+	applyFilter(event: Event) {
+		const filterValue = (event.target as HTMLInputElement).value;
+		this.dataSource.filter = filterValue.trim().toLowerCase();
+
+		if (this.dataSource.paginator) {
+			this.dataSource.paginator.firstPage();
+		}
+	}
+
+	mostrar() {
+		mostrarform(true);
+	}
 }
+const formulario = document.getElementsByClassName("formulario");
+var container: HTMLDivElement;
+
+const mostrarform = (flag: boolean) => {
+	if (flag) {
+		container.style.display = "block";
+	} else {
+		container.style.display = "none";
+	}
+};
